@@ -48,8 +48,9 @@ namespace PassthroughDotNet
                 {
 
                     if (UI.Button("toggle"))
-                        stepper.EnabledPassthrough = !stepper.EnabledPassthrough;
-                    UI.Label($"Passthrough is {(stepper.EnabledPassthrough ? "ON" : "OFF")}");
+                        stepper.Enabled = !stepper.Enabled;
+                    
+                    UI.Label($"Passthrough is {(stepper.Enabled ? "ON" : "OFF")}");
                 }
                 else
                 {
